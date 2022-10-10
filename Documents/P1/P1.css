@@ -147,3 +147,12 @@ td, tr, th{
     border: 1px black solid;
     padding: 5px;
 }
+ol{
+    margin: 0;
+    padding-top: 2%;
+    padding-left: 5%;
+}
+ol > li{
+    margin: 0;
+    padding-top: 2%; 
+}
