@@ -66,11 +66,43 @@ div ul {
     margin: 5%;
 }
 
+#navstruc {
+    display: grid;
+    grid-template-columns: [first] 60% [line2] 40% ;
+    grid-template-rows: [row1-start] 100px [row1-end];
+    align-items: center;
+}
+
+#navstruc  h2{
+    min-width: 100%;
+    grid-column: span 2;
+}
+
 #tankekart {
-    width: 80%;
+    width: 100%;
     height: auto;
     margin: auto;
-    
+}
+
+#layout {
+    display: grid;
+    grid-template-columns: [first] 40% [line2] 60% ;
+    grid-template-rows: [row1-start] 100px [row1-end];
+    align-items: center;
+}
+#layout  h2{
+    min-width: 100%;
+    grid-column: span 2;
+}
+
+#layout > figure >img{
+    width: 100%;
+    height: auto;
+    border: none;
+}
+#layout div, #layout figure {
+    border: none;
+    height: auto;
 }
 
 #content > div > img {
