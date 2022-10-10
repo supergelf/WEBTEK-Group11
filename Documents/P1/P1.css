@@ -7,7 +7,7 @@ body {
 
 main {
     display: grid;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -67,7 +67,42 @@ div ul {
 }
 
 #tankekart {
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin: auto;
     
+}
+
+#content > div > img {
+    width: 30%;
+    margin: 2%;
+    float: left;
+}
+
+#content > div{
+    width: 90%;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+}
+
+#plan > ul {
+    margin: 0;
+    padding-top: 2%;
+    padding-left: 10%;
+}
+#plan > ul > ul {
+    margin: 0;
+}
+
+#plan > ul > li {
+    margin: 0;
+    padding-top: 2%;
+}
+
+#plan li {
+    margin: 0%;
+    padding: 0%;
 }
