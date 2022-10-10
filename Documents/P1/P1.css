@@ -106,3 +106,12 @@ div ul {
     margin: 0%;
     padding: 0%;
 }
+table{
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+td, tr, th{
+    border: 1px black solid;
+    padding: 5px;
+}
