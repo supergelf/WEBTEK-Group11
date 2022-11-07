@@ -40,6 +40,7 @@ for(let x = 0; x < events.length; x++){
   newDiv.classList.add("event");
 
 //insert div after the intro
-  const afterIntro = document.getElementById("intro");
-  document.body.insertBefore(newDiv,afterIntro);
+
+  let eventList = document.getElementById('eventList')
+  eventList.append(newDiv)
 }
