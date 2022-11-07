@@ -25,7 +25,7 @@ function Navbar(){
     logo.setAttribute('src', '../images/logo.png');
     logo.setAttribute('id', 'logo');
 
-    home.setAttribute('href', './index.html')
+    home.setAttribute('href', '../../index.html')
 
     home.setAttribute('id', 'home');
 

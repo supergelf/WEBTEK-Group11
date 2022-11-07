@@ -1,12 +1,9 @@
-
-img {
-  
-}
-
 #intro {
-  width: 80%;
+  width: 55%;
   margin: auto;
   text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 #intro h1 {
@@ -23,36 +20,37 @@ img {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 50% 50%;
-  width: 70%;
+  width: 80%;
   margin: auto;
-  margin-top: 60px;
   margin-bottom: 60px;
 }
 
 #textContainer {
+  width: 80%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
-}
-
-#textContainer h2 {
-  font-size: 30px;
-  margin: 0;
-}
-
-#textContainer p {
-  font-size: 18px;
+  row-gap: 60px;
 }
 
 #imageContainer {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: flex-end;
+  row-gap: 40px;
 }
 
-@media screen and (max-width:600px) {
-  #textContainer{
-    width: 100%;
-  }
+#imageBowling {
+  width: 80%;
+  height: 40%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#imagePool {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
 }
