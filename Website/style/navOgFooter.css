@@ -1,10 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: relative;
-}
-
 #topNav {
     display: flex;
     flex-direction: column;
@@ -16,7 +9,6 @@ body {
 
     height: fit-content;
     width: 100%;
-    overflow: hidden;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -24,7 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 160px;
+    height: 180px;
     width: 100%;
     margin-top: 10px;
     
@@ -58,12 +50,14 @@ body {
     height: 40px;
     width: 100%;
     padding: 10px 0px;
+    
 }
 
 #bottomNav {
     background-color: rgba(221, 62, 62, 0.95);
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .navlink {
@@ -84,6 +78,32 @@ body {
     text-shadow: 0px 2px 20px rgb(255, 255, 255);
 }
 
+@media screen and (max-width:1200px) {
+    .navlink {
+        font-size: 20px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .navlink {
+        font-size: 20px;
+        width: 80px;
+        
+    }
+}
+
+@media screen and (max-width:800px) {
+    #navBottom {
+        flex-wrap: wrap;
+        height: 60px;
+    }
+    .navlink {
+        width: 100px;
+        font-size: 18px;
+    }
+}
+
 #footer {
     display: grid;
     justify-content: space-between;
@@ -100,9 +120,6 @@ body {
 
     color: rgba(255, 255, 255, 1);
 
-    
-    
-    
 }
 
 #footerDiv1 {
@@ -137,3 +154,38 @@ body {
 #footerDiv4 h3 {
     width: 15ch;
 }
+
+@media screen and (max-width:980px) {
+    .footerDiv2-3 h3{
+      font-size: 15px;
+      
+    }
+
+    .footerDiv2-3 p{
+        font-size: 13px;
+      }
+
+    #footerDiv4 h3 {
+        font-size: 15px;
+        width: 10ch;
+    }
+
+  }
+
+@media screen and (max-width:790px) {
+    .footerDiv2-3 h3{
+        font-size: 13px;
+        
+      }
+
+    .footerDiv2-3 p{
+      font-size: 10px;
+      margin-top: 15px;
+    }
+
+    #footerLogo {
+        width: 100px;
+        height: 100px;
+        margin-left: 30px;
+    }
+  }

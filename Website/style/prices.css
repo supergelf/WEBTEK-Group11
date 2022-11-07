@@ -1,27 +1,56 @@
-
-* {
-  box-sizing: border-box;
+#intro {
+  width: 55%;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
-img {
-  margin-top: 10%;
-  margin-bottom: 10%;
+#intro h1 {
+  font-size: 54px;
+  margin: 0;
+  margin-top: 40px;
 }
 
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
+#intro p {
+  font-size: 20px;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+#pricesContainer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 50% 50%;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 60px;
 }
 
-@media screen and (max-width:600px) {
-  .column{
-    width: 100%;
-  }
+#textContainer {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+#imageContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  row-gap: 40px;
+}
+
+#imageBowling {
+  width: 80%;
+  height: 40%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#imagePool {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
 }

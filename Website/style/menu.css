@@ -1,30 +1,51 @@
 .menu{
-  box-sizing: border-box;
-  font-family: verdana, sans-serif;
+  margin-top: 60px;
+  margin-bottom: 100px;
 }
-.introM{
-  text-align: center;
-}
-.menuH2{
-  margin-left: 10px;
-  margin-bottom: 2px;
-}
+
 .foodRow{
-display: flex;
-border-radius: 3px;
-background-color: #f2d8d8;
-box-shadow: 1px 2px #888888;
-margin-left: auto;
-margin-right: auto;
-width: 98%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 60px;
+  width: 90%;
+}
+
+.foodItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: #f2d8d8;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.34);
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.foodItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-top: 30px;
 
 }
-.foodColumn{
-flex:33.33%;
-padding: 5px;
-text-align: center;
 
+.menuImg {
+  width: 80%;
+  border-radius: 8px;
 }
-.menuImg{
-  width: 100%;
+
+.foodItem p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 700px){
+  .foodItem p {
+    font-size: 18px;
+  }
 }
