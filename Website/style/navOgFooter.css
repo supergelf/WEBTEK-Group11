@@ -34,6 +34,7 @@ body {
     height: fit-content;
     width: fit-content;
     transition: 0.3s;
+    
 }
 
 #home:hover {
@@ -43,6 +44,7 @@ body {
 #logo {
     width: 140px;
     height: auto;
+    
 }
 
 #navBottom {
