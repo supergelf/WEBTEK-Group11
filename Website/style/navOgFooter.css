@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+
+#topNav {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(221, 62, 62, 1);
+    background-image: url('../images/navbar-background.jpg');
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#navTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+#home {
+    height: fit-content;
+    width: fit-content;
+    transition: 0.3s;
+    
+}
+
+#home:hover {
+    scale: 1.05;
+}
+
+#logo {
+    width: 140px;
+    height: auto;
+    
+}
+
+#navBottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5%;
+
+    height: 40px;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+#bottomNav {
+    background-color: rgba(221, 62, 62, 0.95);
+    position: sticky;
+    top: 0;
+}
+
+.navlink {
+    width: 120px;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 24px;
+    
+
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.navlink:hover {
+    scale: 1.15;
+    text-shadow: 0px 2px 20px rgb(255, 255, 255);
+}
+
+#footer {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-auto-flow: column;
+    
+    height: min-content;
+    width: 100%;
+    background-color: rgba(221, 62, 62, 1);
+    background-image: url('../images/navbar-background.jpg');
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+
+    color: rgba(255, 255, 255, 1);
+
+    
+    
+    
+}
+
+#footerDiv1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+}
+
+#footerLogo {
+    height: 120px;
+    width: 120px;
+}
+
+.footerDiv2-3 {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 20% 25% 25% 25%;
+    height: 180px;
+}
+
+.footerDiv2-3 h3 {
+    margin: 5, 0,0,0;
+}
+
+
+.footerDiv2-3 p {
+    margin-top: 5;
+    
+}
+
+#footerDiv4 h3 {
+    width: 15ch;
+}
