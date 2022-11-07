@@ -1,27 +1,58 @@
 
-* {
-  box-sizing: border-box;
-}
-
 img {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  
 }
 
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
+#intro {
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+#intro h1 {
+  font-size: 54px;
+  margin: 0;
+  margin-top: 40px;
+}
+
+#intro p {
+  font-size: 20px;
+}
+
+#pricesContainer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 50% 50%;
+  width: 70%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+#textContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+#textContainer h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+#textContainer p {
+  font-size: 18px;
+}
+
+#imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
 @media screen and (max-width:600px) {
-  .column{
+  #textContainer{
     width: 100%;
   }
 }
