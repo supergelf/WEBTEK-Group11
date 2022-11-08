@@ -148,7 +148,18 @@
 
 .footerDiv2-3 p {
     margin-top: 5;
-    
+}
+
+.footerDiv2-3 img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.footerInfoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #footerDiv4 h3 {
@@ -179,9 +190,10 @@
         margin-left: 30px;
     }
 
+
     .footerDiv2-3 h3{
         font-size: 13px;
-        
+        width: 13ch;
       }
 
     .footerDiv2-3 p{

@@ -1,0 +1,47 @@
+#contactContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+#formContainer {
+    width: 60%;
+}
+
+#contactInfo {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#contactInfo h2 {
+    font-size: 20px;
+    margin: 0;
+    height: 100%;
+}
+
+#contactTitle {
+    font-size: 28px;
+    margin: 0;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.contactIcon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}

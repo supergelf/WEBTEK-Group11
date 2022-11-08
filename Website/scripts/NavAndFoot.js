@@ -75,18 +75,32 @@ function Footer(){
     name.textContent = "BOWL-O-RAMA AS";
 
     let phoneNum = document.createElement('p');
-    phoneNum.textContent = "Phone-Number";
+    phoneNum.textContent = "+47 916 35 287";
+    let phoneIcon = document.createElement('img');
+    phoneIcon.setAttribute('src', '../images/icons/phone-icon.png');
+    let phoneContainer = document.createElement('div');
+    phoneContainer.appendChild(phoneIcon);
+    phoneContainer.appendChild(phoneNum);
+    phoneContainer.setAttribute('class', 'footerInfoContainer');
+
 
     let email = document.createElement('p');
-    email.textContent = "Email-Address";
+    email.textContent = "bowlorama@gmail.com";
+    let emailIcon = document.createElement('img');
+    emailIcon.setAttribute('src', '../images/icons/email-icon.png');
+    let emailContainer = document.createElement('div');
+    emailContainer.appendChild(emailIcon);
+    emailContainer.appendChild(email);
+    emailContainer.setAttribute('class', 'footerInfoContainer');
+
 
     div3.appendChild(name);
-    div3.appendChild(phoneNum);
-    div3.appendChild(email);
+    div3.appendChild(phoneContainer);
+    div3.appendChild(emailContainer);
 
 
     let address = document.createElement('h3');
-    address.textContent = "Street-Address 7000 Trondheim";
+    address.textContent = "Bowlingveien 14, 7050 Trondheim";
 
     div4.appendChild(address);
 
