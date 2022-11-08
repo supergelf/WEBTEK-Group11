@@ -151,9 +151,10 @@
 }
 
 .footerDiv2-3 img {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin-right: 10px;
+    margin-top: 5px;
 }
 
 .footerInfoContainer {
@@ -205,5 +206,11 @@
     #footerDiv4 h3 {
         font-size: 13px;
         width: 10ch;
+    }
+    .footerDiv2-3 img {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+        margin-top: 5px;
     }
   }

@@ -77,7 +77,7 @@ function Footer(){
     let phoneNum = document.createElement('p');
     phoneNum.textContent = "+47 916 35 287";
     let phoneIcon = document.createElement('img');
-    phoneIcon.setAttribute('src', '../images/icons/phone-icon.png');
+    phoneIcon.setAttribute('src', '../images/icons/white-phone-icon.png');
     let phoneContainer = document.createElement('div');
     phoneContainer.appendChild(phoneIcon);
     phoneContainer.appendChild(phoneNum);
@@ -87,7 +87,7 @@ function Footer(){
     let email = document.createElement('p');
     email.textContent = "bowlorama@gmail.com";
     let emailIcon = document.createElement('img');
-    emailIcon.setAttribute('src', '../images/icons/email-icon.png');
+    emailIcon.setAttribute('src', '../images/icons/white-email-icon.png');
     let emailContainer = document.createElement('div');
     emailContainer.appendChild(emailIcon);
     emailContainer.appendChild(email);
