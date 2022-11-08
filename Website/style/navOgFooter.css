@@ -155,7 +155,7 @@
     width: 15ch;
 }
 
-@media screen and (max-width:980px) {
+@media screen and (max-width:1060px) {
     .footerDiv2-3 h3{
       font-size: 15px;
       
@@ -173,6 +173,12 @@
   }
 
 @media screen and (max-width:790px) {
+    #footerLogo {
+        width: 100px;
+        height: 100px;
+        margin-left: 30px;
+    }
+
     .footerDiv2-3 h3{
         font-size: 13px;
         
@@ -183,9 +189,9 @@
       margin-top: 15px;
     }
 
-    #footerLogo {
-        width: 100px;
-        height: 100px;
-        margin-left: 30px;
+
+    #footerDiv4 h3 {
+        font-size: 13px;
+        width: 10ch;
     }
   }

@@ -19,7 +19,7 @@
   padding: 30px 10% 30px 10%;
 
   width: 50%;
-  height: 250px;
+  height: 300px;
   border-radius: 10px;
   margin-bottom: 100px;
 
@@ -35,6 +35,7 @@
 
 @media screen and (max-width: 600px) {
     .event {
-      height: 300px;
+      width: 60%;
+      height: 350px;
     }
 }

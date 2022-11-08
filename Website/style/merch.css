@@ -40,7 +40,7 @@
 }
 
 .merchTitle {
-    width: 100%;
+    width: 90%;
     height: 20%;
     margin: 0;
     text-align: center;
@@ -58,10 +58,15 @@
 
 @media screen and (max-width: 650px){
     #merchContainer {
-        width: 80%;
+        width: 100%;
     }
 
     .merchOption {
         height: 200px;
+    }
+
+    .merchTitle {
+        width: 15ch;
+        font-size: 15px;
     }
 }
