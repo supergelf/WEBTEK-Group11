@@ -11,7 +11,19 @@
   width: 90%;
 }
 
-.foodItems {
+#foodItemsBurger {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: #f2d8d8;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.34);
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 20px;
+}
+#foodItemsPizza {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
