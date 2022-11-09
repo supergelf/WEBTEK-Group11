@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/reservation.css">
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/navOgFooter.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="topNav"></div>
+    <div id="bottomNav"></div>
+    
+    <div id="intro">
+        <h1>Reservation</h1>
+    </div>
+
+    <div id="successMsg"></div>
+    <form id="form">
+        <div id="nameDiv" class="twoCol">
+            <label for="firstname">Full name:*</label>
+            <input type="text" id="firstname" class="validateInp" placeholder="Firstname" required>
+            <input type="text" id="lastname" class="validateInp" placeholder="Lastname" required>
+        </div>
+
+        <div id="emailDiv" class="oneCol">
+            <label for="email">Email Address:*</label>
+            <input type="email" id="email" class="validateInp" placeholder="example@mail.com" required>
+        </div>
+
+        <div id="phoneDiv" class="oneCol">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" value="+">
+        </div>
+
+        <div id="dateTimeDiv" class="threeCol">
+            <label for="date">Date:*</label>
+            <label for="time">Time:*</label>
+            <label for="rounds">How Long?(In Hours):*</label>
+            <input type="date" id="date" class="validateInp" required>
+            <input type="time" id="time" class="validateInp" required>
+            <input type="number" id="rounds" class="validateInp" value="1" min="1" max="2" required>
+        </div>
+
+        <div id="acticitiesAlleysDiv" class="twoCol">
+            <label for="activities">Bowling or Pool?</label>
+            <label for="alleys">How Many Alleys/Tables?:*</label>
+
+            <select name="activity" id="activities" vale="bowling">
+                <option value="bowling">Bowling</option>
+                <option value="pool">Pool</option>
+            </select>
+
+            <input type="number" id="alleys" class="validateInp" value="1" min="1" max="2" required>
+        </div> 
+
+        <div id="requirementsDiv" class="oneCol">
+            <label for="requirements">Special Requirements:</label>
+            <textarea name="requirements" id="requirements" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <button type="submit" id="submitBtn">Submit</button>
+        </div>
+    </form>
+
+    <div id="footer"></div>
+    
+
+    <script src="../scripts/reservation.js"></script>
+    <script src="../scripts/NavAndFoot.js"></script>
+</body>
+</html>

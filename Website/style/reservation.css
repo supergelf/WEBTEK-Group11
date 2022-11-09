@@ -1,0 +1,90 @@
+#form{
+    display: grid; 
+    padding: 20px;
+    width: 70%;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: #F2D8D8;
+    height: auto;
+    margin: auto;
+    gap: 10px;
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
+#form *{
+    font-size: 24px;
+}
+#form > div{
+    display: grid;
+    border-radius: 3px;
+}
+.twoCol{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+}
+.threeCol{
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+#nameDiv > label{
+    grid-column: span 2;
+}
+#form > div > input{
+    height: 40px;
+    border-radius: 3px;
+}
+select{
+    -webkit-appearance: menulist-button;   
+}
+
+#form > div > label{
+    margin-bottom: 10px;
+}
+
+#form > div > input{
+    padding-left: 5px;
+}
+@media only screen and (max-width: 890px) {
+    #form *{
+        font-size: 20px;
+    }
+  }
+@media only screen and (max-width: 780px) {
+    #form *{
+        font-size: 16px;
+    }
+  }
+  @media only screen and (max-width: 630px) {
+    #form *{
+        font-size: 12px;
+    }
+  }
+#submitBtn{
+    margin: auto;
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+}
+#submitBtn:hover{
+    background-color: lightgray;
+}
+#requirements{
+    resize: none;
+    padding: 5px;
+}
+.validateInp.error{
+    outline: red 3px solid;
+    border: none;
+}
+.validateInp.valid{
+    outline: green 3px solid;
+    border: none;
+}
+#form.success{
+    visibility: hidden;
+}
+#successMsg{
+    margin: auto;
+    text-transform: uppercase;
+    width: 50%;
+}
