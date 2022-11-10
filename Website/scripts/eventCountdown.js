@@ -32,4 +32,4 @@ let eventCountdown = setInterval(function(){
         document.getElementById(event.type + "Seconds").innerHTML = seconds
     }
 
-}, 1000)
+}, 1000) //Updates every 1000ms (1s)
