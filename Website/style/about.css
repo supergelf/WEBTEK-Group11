@@ -1,0 +1,34 @@
+.aboutContainer {
+  display: grid;
+  grid-template-rows: 40% 52%;
+  row-gap: 8%;
+  width: 80%;
+  margin: auto;
+  
+}
+  
+.aboutRow {
+  display: grid;
+  grid-template-columns: 40% 55%;
+  column-gap: 5%;
+}
+
+.aboutRow2 {
+  display: grid;
+  grid-template-rows: 50% 45%;
+  row-gap: 5%;
+}
+
+#aboutBowling {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#aboutPool {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
