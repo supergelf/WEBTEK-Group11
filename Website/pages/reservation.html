@@ -36,24 +36,34 @@
         </div>
 
         <div id="dateTimeDiv" class="threeCol">
-            <label for="date">Date:*</label>
-            <label for="time">Time:*</label>
-            <label for="rounds">How Long?(In Hours):*</label>
-            <input type="date" id="date" class="validateInp" required>
-            <input type="time" id="time" class="validateInp" required>
-            <input type="number" id="rounds" class="validateInp" value="1" min="1" max="2" required>
+            <div>
+                <label for="date">Date:*</label>
+                <input type="date" id="date" class="validateInp" required>
+            </div>
+            <div>
+                <label for="time">Time:*</label>
+                <input type="time" id="time" class="validateInp" required>
+            </div>
+            <div>
+                <label for="rounds">Rounds:*</label>
+                <input type="number" id="rounds" class="validateInp" value="1" min="1" max="2" required>
+            </div>
         </div>
 
         <div id="acticitiesAlleysDiv" class="twoCol">
-            <label for="activities">Bowling or Pool?</label>
-            <label for="alleys">How Many Alleys/Tables?:*</label>
+            <div>
+                <label for="activities">Bowling or Pool?</label>
+                <select name="activity" id="activities" vale="bowling">
+                    <option value="bowling">Bowling</option>
+                    <option value="pool">Pool</option>
+                </select>
+            </div>
+            <div>
+                <label for="alleys">How Many Alleys/Tables?:*</label>
+                <input type="number" id="alleys" class="validateInp" value="1" min="1" max="2" required>
+            </div>
+            
 
-            <select name="activity" id="activities" vale="bowling">
-                <option value="bowling">Bowling</option>
-                <option value="pool">Pool</option>
-            </select>
-
-            <input type="number" id="alleys" class="validateInp" value="1" min="1" max="2" required>
         </div> 
 
         <div id="requirementsDiv" class="oneCol">

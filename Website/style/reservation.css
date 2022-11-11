@@ -28,34 +28,48 @@
 #nameDiv > label{
     grid-column: span 2;
 }
-#form > div > input{
-    height: 40px;
-    border-radius: 3px;
-}
 select{
     -webkit-appearance: menulist-button;   
 }
-
-#form > div > label{
+div label{
     margin-bottom: 10px;
 }
 
-#form > div > input{
+#form > div input{
     padding-left: 5px;
+    max-height: 40px;
+    min-height: 40px;
+    border-radius: 3px;
+}
+#form > div > div{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 @media only screen and (max-width: 890px) {
     #form *{
         font-size: 20px;
+    }
+    #form > div input{
+        max-height: 36px;
+        min-height: 36px;
     }
   }
 @media only screen and (max-width: 780px) {
     #form *{
         font-size: 16px;
     }
+    #form > div input{
+        max-height: 32x;
+        min-height: 32px;
+    }
   }
   @media only screen and (max-width: 630px) {
     #form *{
         font-size: 12px;
+    }
+    #form > div input{
+        max-height: 26x;
+        min-height: 26px;
     }
   }
 #submitBtn{
