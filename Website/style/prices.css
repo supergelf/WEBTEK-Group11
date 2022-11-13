@@ -1,28 +1,9 @@
-#intro {
-  width: 55%;
-  margin: auto;
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-#intro h1 {
-  font-size: 54px;
-  margin: 0;
-  margin-top: 40px;
-}
-
-#intro p {
-  font-size: 20px;
-}
-
 #pricesContainer {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 50% 50%;
   width: 80%;
   margin: auto;
-  margin-bottom: 60px;
 }
 
 #textContainer {
