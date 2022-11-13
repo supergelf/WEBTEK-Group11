@@ -68,7 +68,7 @@ div label{
         font-size: 12px;
     }
     #form > div input{
-        max-height: 26x;
+        max-height: 26px;
         min-height: 26px;
     }
   }
@@ -78,9 +78,13 @@ div label{
     height: 40px;
     background-color: white;
     text-align: center;
+    border-radius: 5px;
+    border: 1px solid gray;
+    transition: 0.2s;
 }
 #submitBtn:hover{
     background-color: lightgray;
+    cursor: pointer;
 }
 #requirements{
     resize: none;
