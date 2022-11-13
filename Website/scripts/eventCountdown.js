@@ -30,10 +30,10 @@ function eventCountdown(){
         document.getElementById(event.type + "Hours").innerHTML = hours
         document.getElementById(event.type + "Minutes").innerHTML = minutes
         document.getElementById(event.type + "Seconds").innerHTML = seconds
-    }
+    };
 
 }
 
 eventCountdown() //run once before 1 second has passed
 
-setInterval(eventCountdown, 1000)//Updates every 1000ms (1s)
+setInterval(eventCountdown, 1000)//Update every 1000ms (1s)
