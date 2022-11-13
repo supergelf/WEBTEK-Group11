@@ -11,8 +11,18 @@ const burger = [
   {
     name:"Bowlorama-Supreme",
     imgLink:"../images/menu_img/burgerImage.jpg"
-  }
+  },
+  {
+    name: "Blue-Cheese Bonanza",
+    imgLink:"../images/menu_img/burgerImage.jpg"
+  },
+  {
+    name:"Veggie-Dream",
+    imgLink:"../images/menu_img/burgerImage.jpg"
+  },
 ]
+
+
 const pizza = [
   {
     name: "Bolwora-Margarita",
@@ -25,7 +35,15 @@ const pizza = [
   {
     name:"Bowlopizza Special",
     imgLink:"../images/menu_img/pizzaImage.jpg"
-  }
+  },
+  {
+    name: "Bowling-Champ pizza",
+    imgLink:"../images/menu_img/pizzaImage.jpg"
+  },
+  {
+    name:"King Special",
+    imgLink:"../images/menu_img/pizzaImage.jpg"
+  },
 ]
 
 for(let x = 0; x < burger.length; x++){
