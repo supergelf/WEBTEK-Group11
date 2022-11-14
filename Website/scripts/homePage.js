@@ -32,7 +32,7 @@ const whatWeOffer = [
     {
         title : 'Merch', 
         text : 'After noticing an increase in people asking for Bowl-O-Rama exclusive clothing, we made a bunch of merchandise available. All purchases must be made at our establishment, but feel free to browse our selection in the "Merch" page.', 
-        background : "../images/merch_img/briller2.webp"
+        background : "../images/merch_img/shoes.png"
     },
 ]
 
