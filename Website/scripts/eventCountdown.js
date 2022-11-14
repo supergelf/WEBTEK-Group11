@@ -12,7 +12,7 @@ let eventList = [
 ]
 
 
-let eventCountdown = setInterval(function(){
+function eventCountdown(){
 
     for (const event of eventList){
         let nextEvent = new Date(event.date).getTime(); //the next event 
@@ -30,6 +30,10 @@ let eventCountdown = setInterval(function(){
         document.getElementById(event.type + "Hours").innerHTML = hours
         document.getElementById(event.type + "Minutes").innerHTML = minutes
         document.getElementById(event.type + "Seconds").innerHTML = seconds
-    }
+    };
 
-}, 1000) //Updates every 1000ms (1s)
+}
+
+eventCountdown() //run once before 1 second has passed
+
+setInterval(eventCountdown, 1000)//Update every 1000ms (1s)
