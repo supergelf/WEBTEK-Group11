@@ -46,35 +46,6 @@ const pizza = [
   },
 ]
 
-for(let x = 0; x < burger.length; x++){
-  let newDiv  = document.createElement("div");
-  let name   = burger[x].name;
-  let img     = burger[x].imgLink;
-
-  let newName   = document.createTextNode(name);
-
-  let pEl    = document.createElement("p");
-
-  let newImg = document.createElement("img");
-  newImg.setAttribute("src",img);
-  newImg.setAttribute("alt",name);
-
-  pEl.appendChild(newName);
-
- newImg.setAttribute("class","menuImg");
-
-  newDiv.appendChild(newImg);
-  newDiv.appendChild(pEl);
-
-  newDiv.setAttribute("class", "foodItem");
-
-  let burgerList = document.getElementById("foodItemsBurger");
-
-  burgerList.appendChild(newDiv);
-
-
-}
-
 for(let x = 0; x < pizza.length; x++){
   let newDiv  = document.createElement("div");
   let name   = pizza[x].name;
@@ -102,4 +73,35 @@ for(let x = 0; x < pizza.length; x++){
   let pizzaList = document.getElementById("foodItemsPizza");
 
   pizzaList.appendChild(newDiv);
+}
+
+
+//Creating the 
+for(let x = 0; x < burger.length; x++){
+  let newDiv  = document.createElement("div");
+  let name   = burger[x].name;
+  let img     = burger[x].imgLink;
+
+  let newName   = document.createTextNode(name);
+
+  let pEl    = document.createElement("p");
+
+  let newImg = document.createElement("img");
+  newImg.setAttribute("src",img);
+  newImg.setAttribute("alt",name);
+
+  pEl.appendChild(newName);
+
+ newImg.setAttribute("class","menuImg");
+
+  newDiv.appendChild(newImg);
+  newDiv.appendChild(pEl);
+
+  newDiv.setAttribute("class", "foodItem");
+
+  let burgerList = document.getElementById("foodItemsBurger");
+
+  burgerList.appendChild(newDiv);
+
+
 }

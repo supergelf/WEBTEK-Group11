@@ -24,8 +24,9 @@ function Navbar(){
 
     logo.setAttribute('src', '../images/logo.png');
     logo.setAttribute('id', 'logo');
+    logo.setAttribute('alt', 'Bowl-O-Rama logo');
 
-    home.setAttribute('href', '../pages/index.html')
+    home.setAttribute('href', '../pages/homepage.html')
 
     home.setAttribute('id', 'home');
 
@@ -53,6 +54,7 @@ function Footer(){
     let logo = document.createElement('img');
     logo.setAttribute('src', '../images/logo.png');
     logo.setAttribute('id', 'footerLogo');
+    logo.setAttribute('alt', 'Bowl-O-Rama logo');
     div1.appendChild(logo);
 
 
@@ -75,9 +77,12 @@ function Footer(){
     name.textContent = "BOWL-O-RAMA AS";
 
     let phoneNum = document.createElement('p');
-    phoneNum.textContent = "+47 916 35 287";
+    phoneNum.textContent = "+47 999 99 999";
+
     let phoneIcon = document.createElement('img');
     phoneIcon.setAttribute('src', '../images/icons/white-phone-icon.png');
+    phoneIcon.setAttribute('alt', 'phone icon')
+
     let phoneContainer = document.createElement('div');
     phoneContainer.appendChild(phoneIcon);
     phoneContainer.appendChild(phoneNum);
@@ -86,8 +91,11 @@ function Footer(){
 
     let email = document.createElement('p');
     email.textContent = "bowlorama@gmail.com";
+
     let emailIcon = document.createElement('img');
     emailIcon.setAttribute('src', '../images/icons/white-email-icon.png');
+    emailIcon.setAttribute('alt', 'email icon');
+
     let emailContainer = document.createElement('div');
     emailContainer.appendChild(emailIcon);
     emailContainer.appendChild(email);
