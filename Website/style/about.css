@@ -22,11 +22,36 @@
   row-gap: 5%;
 }
 
-#aboutBowling {
+.aboutBowling {
   border-radius: 10px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+}
+
+.slideDiv{
+  position: relative;
+}
+
+.slideDiv > ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slides{
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 1s opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.active{
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
 }
 
 #aboutPool {
