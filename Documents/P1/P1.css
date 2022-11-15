@@ -156,3 +156,7 @@ ol > li{
     margin: 0;
     padding-top: 2%; 
 }
+
+#websiteLink {
+    text-align: center;
+}

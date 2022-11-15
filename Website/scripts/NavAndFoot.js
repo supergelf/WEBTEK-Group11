@@ -1,16 +1,17 @@
 function Navbar(){
     let topnav = document.getElementById('topNav');
 
-    let top = document.createElement('div');
+    let top = document.createElement('div'); //container for the top part of the header
     top.setAttribute('id', 'navTop');
 
     let bottomnav = document.getElementById('bottomNav')
 
-    let bottom = document.createElement('div');
+    let bottom = document.createElement('div'); //container for the navlinks
     bottom.setAttribute('id', 'navBottom');
 
-    let pages = ['prices', 'reservation', 'menu', 'events', 'merch', 'about', 'contact']
+    let pages = ['prices', 'reservation', 'menu', 'events', 'merch', 'about', 'contact'] //name of the links
 
+    //creating the links
     for (const page of pages) {
         let a = document.createElement('a');
         a.textContent = page;
@@ -19,15 +20,15 @@ function Navbar(){
         bottom.appendChild(a);
     }
 
+    //creating the anker element and putting the logo inside it
     let home = document.createElement('a');
     let logo = document.createElement('img');
 
-    logo.setAttribute('src', '../images/logo.png');
+    logo.setAttribute('src', '../images/other/logo.png');
     logo.setAttribute('id', 'logo');
     logo.setAttribute('alt', 'Bowl-O-Rama logo');
 
     home.setAttribute('href', '../pages/homepage.html')
-
     home.setAttribute('id', 'home');
 
     home.appendChild(logo);
@@ -35,7 +36,6 @@ function Navbar(){
 
     topnav.appendChild(top);
     bottomnav.appendChild(bottom)
-
     
 };
 
@@ -52,7 +52,7 @@ function Footer(){
 
 
     let logo = document.createElement('img');
-    logo.setAttribute('src', '../images/logo.png');
+    logo.setAttribute('src', '../images/other/logo.png');
     logo.setAttribute('id', 'footerLogo');
     logo.setAttribute('alt', 'Bowl-O-Rama logo');
     div1.appendChild(logo);

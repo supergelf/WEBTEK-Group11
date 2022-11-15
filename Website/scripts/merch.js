@@ -1,31 +1,31 @@
 const merchList = [
     {
         title: 'Stylish Pants', 
-        img : '../images/merch_img/bukser.webp',
+        img : '../images/merch_img/pants.webp',
         alt : 'stylish pants'
     },
 
     {
         title: 'Bowling Glasses', 
-        img : '../images/merch_img/briller2.webp',
+        img : '../images/merch_img/glasses.webp',
         alt : 'bowling glasses'
     },
 
     {
         title: 'Simply the best Bowling Shoes', 
-        img : '../images/merch_img/sko.png',
+        img : '../images/merch_img/shoes.png',
         alt : 'fancy bowling shoes'
     },
 
     {
         title: 'Awesome Bowling Hat', 
-        img : '../images/merch_img/hatt.jpg',
+        img : '../images/merch_img/hat.jpg',
         alt : 'hat shaped like a bowling cone'
     },
 
     {
         title: 'Cool Stickers', 
-        img : '../images/merch_img/klistremerke2.png',
+        img : '../images/merch_img/sticker.png',
         alt : 'bowling sticker'
     },
 
