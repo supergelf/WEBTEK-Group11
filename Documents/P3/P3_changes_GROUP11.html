@@ -38,13 +38,13 @@
             <p>We ended up having several CSS files since it was easier to navigate smaller files and write each unique part of the site individualy without messing up somebody else's work. We put all the universal CSS in the styles.css, and all the uniqe to each page CSS in each of their own stylesheet.</p>
 
             <h3>Changes to homepage.html</h3>
-            <p>The subheading "What We Offer" was aligned to the middle of the screen as it fit better with the rest of the content, which was already positioned in the center of the screen. We made the color of the text for each "What We Offer" card white so it better contrasted the background images. We also decided to make the background images blend in with a red color to match the color theme of the site. We made each card a little smaller so that the user didn't have to scroll unnecesarily far down to view everything.</p>
+            <p>The subheading "What We Offer" was aligned to the middle of the screen as it fit better with the rest of the content, which was already positioned in the center of the screen. We made the color of the text for each "What We Offer" card white so it better contrasted the background images. We also decided to make the background images blend in with a red color to match the color theme of the site. We made each card a little smaller so that the user didn't have to scroll unnecessarily far down to view everything.</p>
 
             <h3>Changes to prices.html</h3>
             <p>We ended up aligning the main heading of the page as we felt it fit better with the finalized page and matched the rest of the other pages's heading. The border radius of the images were increased from 5 pixels to 10 as that ended up being more pleasing to the eye. We also made the images disappear when the screen is 600 pixels or narrower, as it would just hinder the user from getting the information they are looking for.</p>
 
             <h3>Changes to reservation.html</h3>
-            <p>We made some small tweaks to the form, that proved to work better than the mockup. Instead of just having a date reservation, we also put in a time input so that we could validate based on what hour the user chose. The "Special Requirements" area was made a little larger, and the submit buttom narrower as it was unnecesarily wide in the mockup. The submit button should still be very easy to locate, despite being scaled down.</p>
+            <p>We made some small tweaks to the form, that proved to work better than the mockup. Instead of just having a date reservation, we also put in a time input so that we could validate based on what hour the user chose. The "Special Requirements" area was made a little larger, and the submit buttom narrower as it was unnecessarily wide in the mockup. The submit button should still be very easy to locate, despite being scaled down.</p>
 
             <h3>Changes to menu.html</h3>
             <p>We increase both the border radius on the pink rows with food items inside, as well as the pictures of the food items themselves. Both increased from 5 pixels to 8 as we felt it gave the page a softer and more welcoming feel.</p>
@@ -62,14 +62,106 @@
             <p>We centered the heading and added some text meant to describe the different things the user could email the bowling alley about. A submit button was added to the form, as itw as missing from the mockup. The text with the contact info was made bold to draw the users attention towards it. The whole contact section were also narrowed to make it easier for the user to interact with.</p>
 
             <h3>Changes to required Javascript</h3>
-            <p>Changes**</p>
+            <p>We changed the first Javascript requirement from showing a timer to when the next events is, to showing a timer for each individual event, as we felt that minimized the room for misunderstanding between the establishment and the user. Both the countdown timer and the program to create and append events into the page are stored in the events.js file, as we felt that made the most sense, since the timer is dependent on the program that create the events.</p>
+            <p>We removed the contact us form from the fourth required javascript function, the one to validate user input, as we felt it wasn't necessary, and only applied to the reservation form. Since the user can send whatever message they want, and the form isn't dependent on the person filling out any dates or number values, we felt that html validation was enough for the contact us form.</p>
 
             <h3>Additional Javascript</h3>
+            <p>We decided to make javascript files to fill out the repeating information on pages with a lot made in the same format, like the menu (Pizza and Burger), the homepage (What We Offer section) and the merch page to append every merch item to the page. The footer and header were also made with one function each in the navAndFoot.js file.</p>
 
         </div>
 
         <div>
             <h3>Updated Organizational Scheme</h3>
+            <p>Since we made several stylesheets and javascript files, we decided to put these into folders as well. We also made folders inside of the images folder, to make it easier to organize and manage the images.</p>
+            <p>List of files and folders:</p>
+
+            <ul>
+                <li>images/</li>
+                <ul>
+                    <li>aboutus_img/</li>
+                    <ul>
+                        <li>bowling.jpeg</li>
+                        <li>pool2.jpeg</li>
+                    </ul>
+
+                    <li>event_img/</li>
+                    <ul>
+                        <li>bowlingTournament.jpg</li>
+                        <li>poolTournament.jpg</li>
+                    </ul>
+
+                    <li>icons/</li>
+                    <ul>
+                        <li>email-icon.png</li>
+                        <li>location-icon.png</li>
+                        <li>phone-icon.png</li>
+                        <li>white-email-icon.png</li>
+                        <li>white-phone-icon.png</li>
+                    </ul>
+
+                    <li>menu_img/</li>
+                    <ul>
+                        <li>burgerImage.jpg</li>
+                        <li>pizzaImage.jpg</li>
+                    </ul>
+
+                    <li>merch_img/</li>
+                    <ul>
+                        <li>bowling_pants.png</li>
+                        <li>bowling_shorts.png</li>
+                        <li>cool_bowling_shorts.png</li>
+                        <li>glasses.webp</li>
+                        <li>hat.jpg</li>
+                        <li>pants.webp</li>
+                        <li>shoes.png</li>
+                        <li>sticker.png</li>
+                    </ul>
+
+                    <li>other/</li>
+                    <ul>
+                        <li>birthday.jpg</li>
+                        <li>bowling.jpg</li>
+                        <li>navbar-background.jpg</li>
+                        <li>pool.jpg</li>
+                        <li>logo.png</li>
+                    </ul>
+                </ul>
+
+                <li>pages/</li>
+                <ul>
+                    <li>about.html</li>
+                    <li>contact.html</li>
+                    <li>events.html</li>
+                    <li>homepage.html</li>
+                    <li>menu.html</li>
+                    <li>merch.html</li>
+                    <li>prices.html</li>
+                    <li>reservation.html</li>
+                </ul>
+
+                <li>scripts/</li>
+                <ul>
+                    <li>events.js</li>
+                    <li>homePage.js</li>
+                    <li>menu.js</li>
+                    <li>merch.js</li>
+                    <li>navAndFoot.js</li>
+                    <li>reservation.js</li>
+                </ul>
+
+                <li>styles/</li>
+                <ul>
+                    <li>about.css</li>
+                    <li>contact.css</li>
+                    <li>events.css</li>
+                    <li>homepage.css</li>
+                    <li>menu.css</li>
+                    <li>merch.css</li>
+                    <li>prices.css</li>
+                    <li>reservation.css</li>
+                    <li>styles.css</li>
+                </ul>
+            </ul>
         </div>
 
         <div>

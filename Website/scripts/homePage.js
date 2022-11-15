@@ -2,19 +2,19 @@ const whatWeOffer = [
     {
         title : 'A terrific bowling experience', 
         text : 'At Bowl-O-Rama, your satisfaction is our highest priority. We constantly strive towards making your visit to Bowl-O-Rama the best bowling experience you can imagine.', 
-        background : "../images/bowling.jpg"
+        background : "../images/other/bowling.jpg"
     },
 
     {
         title : 'Birthdays', 
         text : 'If you want to throw a friend or family member an amazing birthday party, then there is no better place than Bowl-O-Rama. Let us know how we may set up the party by writing it under "Special Requirements" in the reservation form, or give us a call!', 
-        background : "../images/birthday.jpg"
+        background : "../images/other/birthday.jpg"
     },
 
     {
         title : 'Pool', 
         text : 'Besides from bowling, Bowl-O-Rama also houses some excellent pool tables, equipped with all the gear needed. It is quite popular, so you might want to make a reservation through our "Reservation" page', 
-        background : "../images/pool.jpg"
+        background : "../images/other/pool.jpg"
     },
 
     {

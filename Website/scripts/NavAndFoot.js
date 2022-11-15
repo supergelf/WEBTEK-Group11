@@ -22,7 +22,7 @@ function Navbar(){
     let home = document.createElement('a');
     let logo = document.createElement('img');
 
-    logo.setAttribute('src', '../images/logo.png');
+    logo.setAttribute('src', '../images/other/logo.png');
     logo.setAttribute('id', 'logo');
     logo.setAttribute('alt', 'Bowl-O-Rama logo');
 
@@ -52,7 +52,7 @@ function Footer(){
 
 
     let logo = document.createElement('img');
-    logo.setAttribute('src', '../images/logo.png');
+    logo.setAttribute('src', '../images/other/logo.png');
     logo.setAttribute('id', 'footerLogo');
     logo.setAttribute('alt', 'Bowl-O-Rama logo');
     div1.appendChild(logo);

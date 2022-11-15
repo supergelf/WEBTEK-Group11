@@ -50,7 +50,7 @@ p {
   flex-direction: column;
 
   background-color: rgba(221, 62, 62, 1);
-  background-image: url('../images/navbar-background.jpg');
+  background-image: url('../images/other/navbar-background.jpg');
   background-blend-mode: soft-light;
   background-position: center;
   background-size: cover;
@@ -156,7 +156,7 @@ p {
   height: min-content;
   width: 100%;
   background-color: rgba(221, 62, 62, 1);
-  background-image: url('../images/navbar-background.jpg');
+  background-image: url('../images/other/navbar-background.jpg');
   background-blend-mode: soft-light;
   background-position: center;
   background-size: cover;
