@@ -14,7 +14,7 @@ function slideshow(){
     }
     
     i++
-    if( i == slides.length ){
+    if( i === slides.length ){
         i = 0
     }
 }
