@@ -42,27 +42,31 @@ const merchList = [
     },
 ]
 
-let merchContainer = document.getElementById('merchContainer');
+let merchContainer = document.getElementById('merchContainer'); //where the items are supposed to be put
 
-for (const item of merchList){
+for (const item of merchList){ 
+    //create div for each object in array
     let merchItem = document.createElement('div');
     merchItem.setAttribute('class', 'merchOption');
 
+    //create image
     let image = document.createElement('img');
     image.setAttribute('alt', item.alt);
     image.setAttribute('src', item.img)
 
+    //create anchor tag and put the image inside it
     let fullImage = document.createElement('a');
     fullImage.setAttribute('href', item.img);
     fullImage.setAttribute('target', '_blank');
     fullImage.appendChild(image);
 
+    //create the title of the item
     let title = document.createElement('p');
     title.setAttribute('class', 'merchTitle');
     title.textContent = item.title;
 
+    //append image and title to item, and item to the page
     merchItem.appendChild(fullImage);
     merchItem.appendChild(title);
-
     merchContainer.appendChild(merchItem);
 }

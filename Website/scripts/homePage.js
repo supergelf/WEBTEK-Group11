@@ -56,8 +56,8 @@ for (const offer of whatWeOffer){
     desc.setAttribute('class', 'offerDesc');
     desc.textContent = offer.text;
 
+    //appends title and description the the div, and the div to the page
     offerBox.appendChild(title);
     offerBox.appendChild(desc);
-
     offers.appendChild(offerBox);
 }

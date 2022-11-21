@@ -39,8 +39,12 @@
                     <textarea name="message" id="message" cols="30" rows="15" placeholder="Your Message Here...*" required></textarea>
                 </div>
         
-                <div id="buttonDiv">
-                    <button type="submit" id="submit">Submit</button>
+                <div id="buttonDiv"> 
+                    <button type="submit" id="submit" onclick="function verifyForm(){
+                        let form = document.getElementById('contactForm');
+                        if (form.checkValidity()){
+                            alert('We have recieved your message, thank you!')}} 
+                        verifyForm()">Submit</button> <!--Check if the form is filled in, and alerts the user-->
                 </div>
 
             </form>

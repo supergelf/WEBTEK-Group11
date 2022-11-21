@@ -46,51 +46,47 @@ const pizza = [
   },
 ]
 
-for(let x = 0; x < pizza.length; x++){
-  let newDiv  = document.createElement("div");
-  let name   = pizza[x].name;
-  let img     = pizza[x].imgLink;
+for(let x = 0; x < pizza.length; x++){  //for every object in pizza array
+  let newDiv = document.createElement("div");
+  let name = pizza[x].name;
+  let img = pizza[x].imgLink;
 
-  let newName  = document.createTextNode(name);
+  let newName = document.createTextNode(name); //name of pizza
+  let pEl = document.createElement("p");
+  pEl.appendChild(newName);
 
-  let pEl    = document.createElement("p");
-
+  //create image 
   let newImg = document.createElement("img");
   newImg.setAttribute("src",img);
   newImg.setAttribute("alt",name);
+  newImg.setAttribute("class","menuImg");
 
-  pEl.appendChild(newName);
-
-   newImg.setAttribute("class","menuImg");
-
-
+  //append image and text to div
   newDiv.appendChild(newImg);
   newDiv.appendChild(pEl);
-
 
   newDiv.setAttribute("class", "foodItem");
 
   let pizzaList = document.getElementById("foodItemsPizza");
 
-  pizzaList.appendChild(newDiv);
+  pizzaList.appendChild(newDiv); //append item to the pizza row
 }
 
 
-//Creating the 
+//Creating the burger elements the same way as the pizza
 for(let x = 0; x < burger.length; x++){
-  let newDiv  = document.createElement("div");
-  let name   = burger[x].name;
-  let img     = burger[x].imgLink;
+  let newDiv = document.createElement("div");
+  let name = burger[x].name;
+  let img = burger[x].imgLink;
 
-  let newName   = document.createTextNode(name);
+  let newName = document.createTextNode(name);
 
-  let pEl    = document.createElement("p");
+  let pEl = document.createElement("p");
+  pEl.appendChild(newName);
 
   let newImg = document.createElement("img");
   newImg.setAttribute("src",img);
   newImg.setAttribute("alt",name);
-
-  pEl.appendChild(newName);
 
  newImg.setAttribute("class","menuImg");
 
