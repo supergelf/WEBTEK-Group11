@@ -160,3 +160,22 @@ ol > li{
 #websiteLink {
     text-align: center;
 }
+
+#testingPlatforms {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#testingDevice {
+    width: 30%;
+    border: none;
+}
+
+#testingBrowsers {
+    width: 70%;
+    border: none;
+}
