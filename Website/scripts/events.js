@@ -79,8 +79,8 @@ for(let x = 0; x < events.length; x++){
 //Function to create a countdown timer for each event
 function eventCountdown(){
   for (const event of events){
-      let nextEvent = new Date(event.date).getTime(); //the next event 
-      let now = new Date().getTime();
+      let nextEvent = new Date(event.date).getTime(); //time to the next event 
+      let now = new Date().getTime(); //time now
 
       let timeToEvent = nextEvent - now; //get number of milliseconds between now and the event
 
