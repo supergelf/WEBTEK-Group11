@@ -46,27 +46,26 @@ const pizza = [
   },
 ]
 
-for(let x = 0; x < pizza.length; x++){
+for(let x = 0; x < pizza.length; x++){ 
   let newDiv  = document.createElement("div");
   let name   = pizza[x].name;
   let img     = pizza[x].imgLink;
 
   let newName  = document.createTextNode(name);
-
   let pEl    = document.createElement("p");
+  pEl.appendChild(newName);
 
+  //create image 
   let newImg = document.createElement("img");
   newImg.setAttribute("src",img);
   newImg.setAttribute("alt",name);
 
-  pEl.appendChild(newName);
 
-   newImg.setAttribute("class","menuImg");
+  newImg.setAttribute("class","menuImg");
 
-
+  //append image and text to div
   newDiv.appendChild(newImg);
   newDiv.appendChild(pEl);
-
 
   newDiv.setAttribute("class", "foodItem");
 
@@ -76,7 +75,7 @@ for(let x = 0; x < pizza.length; x++){
 }
 
 
-//Creating the 
+//Creating the burger elements the same way
 for(let x = 0; x < burger.length; x++){
   let newDiv  = document.createElement("div");
   let name   = burger[x].name;
