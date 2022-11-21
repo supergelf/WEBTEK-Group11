@@ -86,7 +86,7 @@ function Footer(){
     phoneNum.textContent = "+47 999 99 999";
 
     let phoneIcon = document.createElement('img');
-    phoneIcon.setAttribute('src', '../images/icons/white-phone-icon.png');
+    phoneIcon.setAttribute('src', '../images/other/white-phone-icon.png');
     phoneIcon.setAttribute('alt', 'phone icon')
 
     let phoneContainer = document.createElement('div'); //container for the phone icon and number
@@ -99,7 +99,7 @@ function Footer(){
     email.textContent = "bowlorama@gmail.com";
 
     let emailIcon = document.createElement('img');
-    emailIcon.setAttribute('src', '../images/icons/white-email-icon.png');
+    emailIcon.setAttribute('src', '../images/other/white-email-icon.png');
     emailIcon.setAttribute('alt', 'email icon');
 
     let emailContainer = document.createElement('div'); //container for email icon and email
